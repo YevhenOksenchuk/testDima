@@ -1,0 +1,338 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/transfonter.org-20210205-093458/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/robotoRoboto-Regular.woff') format('woff'),
+    url('../fonts/robotoRoboto-Regular.ttf') format('truetype'),
+    url('../fonts/robotoRoboto-Regular.svg#Roboto-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    margin: 0;
+
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+button {
+    outline: none;
+    cursor: pointer;
+}
+
+.btn {
+    background: #07A7EB;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.125rem;
+    border: 1px solid transparent;
+    color: #ffffff;
+    transition: .5s;
+}
+
+.btn:hover {
+    background: #45C7FF;
+}
+
+.btn:active {
+    background: #017BBF;
+}
+
+.header {
+    padding: 15px 0;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    white-space: nowrap;
+
+}
+
+.header__list-item:not(:last-child) {
+    margin-right: 40px;
+
+}
+
+.header__item-link:hover {
+    color: #07A7EB;
+    text-decoration: underline;
+
+}
+
+
+.hero {
+    padding: 76px 0 109px;
+    background-image: url("../img_png/hero-bg.png");
+    background-size: cover;
+    background-position: left center;
+    background-color: #cccccc;
+    color: #ffffff;
+}
+
+.hero__title {
+    font-size: 3.125rem;
+    line-height: 60px;
+    max-width: 640px;
+    margin-bottom: 44px;
+}
+
+.hero__list {
+    font-size: 1.5rem;
+    margin-bottom: 79px;
+}
+
+.hero__list_item {
+    position: relative;
+    padding-left: 45px;
+
+}
+
+.hero__list_item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.hero__btn {
+    height: 58px;
+    width: 100%;
+    max-width: 380px;
+}
+
+.hero__list_item:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 24px;
+    height: 14px;
+    background: url("../img_png/Vector.png") no-repeat;
+}
+
+.services {
+    padding: 63px 0 55px;
+    text-align: center;
+}
+
+.services__title {
+    font-size: 36px;
+    margin-bottom: 29px;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__list-item {
+    width: calc(100% / 3);
+    height: 100%;
+    padding: 140px 0 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+}
+
+.services__list-item:hover {
+    box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+
+.services__item-title {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.services__item-description {
+    max-width: 310px;
+    margin: 0 auto;
+}
+
+.services__list-item-import {
+    background-image: url("../img_png/icon_import2.png");
+}
+
+.services__list-item-import:hover {
+    background-image: url("../img_png/icon_import.png");
+}
+
+.services__list-item-broker {
+    background-image: url("../img_png/icon_broker.png");
+}
+
+.services__list-item-broker:hover {
+    background-image: url("../img_png/icon_broker2.png");
+}
+
+.services__list-item-export {
+    background-image: url("../img_png/icon_export.png");
+}
+
+.services__list-item-export:hover {
+    background-image: url("../img_png/Untitled-1\ 1.png");
+}
+
+.services__list-item-car {
+    background-image: url("../img_png/car.png");
+}
+
+.services__list-item-car:hover {
+    background-image: url("../img_png/icon_car2.png");
+}
+
+.services__list-item-insurance {
+    background-image: url("../img_png/certificatett.png");
+}
+
+.services__list-item-insurance:hover {
+    background-image: url("../img_png/certificatebl.png");
+}
+
+.services__list-item-lawyer {
+    background-image: url("../img_png/icon_lawyer.png");
+}
+
+.services__list-item-lawyer:hover {
+    background-image: url("../img_png/icon_lawyer2.png");
+}
+
+.services__list-item-china {
+    background-image: url("../img_png/icon_china.png");
+}
+
+.services__list-item-china:hover {
+    background-image: url("../img_png/icon_china2.png");
+}
+
+.services__list-item-harbor {
+    background-image: url("../img_png/icon_harbor.png");
+}
+
+.services__list-item-harbor:hover {
+    background-image: url("../img_png/icon_harbor2.png");
+}
+
+.services__list-item-logistics {
+    background-image: url("../img_png/icon_logistics.png");
+}
+
+.services__list-item-logistics:hover {
+    background-image: url("../img_png/icon_logistics2.png");
+}
+
+
+/*ABOUT*/
+.about__title {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 48px;
+}
+
+.about__container {
+    padding: 65px 0 85px;
+    background-image: url("../img_png/image 4.png");
+    background-size: cover;
+    background-position: left center;
+    border-radius: 8px;
+}
+
+.about__wrapper {
+    max-width: 628px;
+    margin: 0 77px 0 auto;
+    line-height: 22px;
+
+}
+
+.about__btn {
+    border: 3px solid #07A7EB;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 324px;
+    height: 58px;
+    background-color: transparent;
+}
+
+.about__description--weight {
+    font-weight: bold;
+    margin-bottom: 25px;
+
+}
+
+.about__description {
+    margin-bottom: 25px;
+    line-height: 22px;
+}
+
+.about__description:last-of-type {
+    margin-bottom: 40px;
+}
+
+
+.partners {
+    padding: 63px 0 66px;
+    text-align: center;
+}
+
+.partners__title {
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 100px;
+}
+
+.partners__list {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+
+}
+
+.partners__list-item {
+    width: calc(100% / 5);
+    /*padding: 0 0 40px;*/
+    cursor: pointer;
+}
